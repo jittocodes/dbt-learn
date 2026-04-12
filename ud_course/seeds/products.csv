@@ -1,0 +1,6 @@
+id,cost,category,name,brand,retail_price,department,sku,distribution_center_id
+1,25,T-Shirt,Basic White,Hanes,35,Men,SKU1,1
+2,45,Jeans,Classic Blue,Levi's,80,Women,SKU2,2
+3,15,Socks,Crew 3-Pack,Nike,25,Men,SKU3,1
+4,120,Outerwear,Winter Parka,North Face,250,Women,SKU4,2
+5,10,Accessories,Belt,Calvin Klein,30,Men,SKU5,1

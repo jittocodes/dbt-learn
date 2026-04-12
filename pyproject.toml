@@ -1,0 +1,14 @@
+[project]
+name = "dbtlearn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.11.8",
+    "dbt-postgres>=1.10.0",
+    "pandas>=3.0.2",
+    "psycopg2-binary>=2.9.11",
+    "requests>=2.33.1",
+    "sqlalchemy>=2.0.49",
+]

@@ -1,0 +1,6 @@
+id,user_id,sequence_number,session_id,created_at,ip_address,city,state,postal_code,browser,traffic_source,uri,event_type
+1,101,1,S1,2023-01-01 09:00:00,127.0.0.1,Los Angeles,CA,90210,Chrome,Search,/home,home
+2,101,2,S1,2023-01-01 09:05:00,127.0.0.1,Los Angeles,CA,90210,Chrome,Search,/products,product
+3,101,3,S1,2023-01-01 09:10:00,127.0.0.1,Los Angeles,CA,90210,Chrome,Search,/cart,cart
+4,101,4,S1,2023-01-01 09:15:00,127.0.0.1,Los Angeles,CA,90210,Chrome,Search,/purchase,purchase
+5,102,1,S2,2023-01-02 10:00:00,127.0.0.1,New York,NY,10012,Safari,Facebook,/home,home
