@@ -1,25 +1,18 @@
 WITH source AS (
-	SELECT *
+        SELECT *
 
-	FROM {{ source('thelook_ecommerce', 'products') }}
+        FROM {{ source('thelook_ecommerce', 'products') }}
 )
 
 SELECT
-	-- IDs
-	id AS product_id,
-
-	-- Other columns
-	cost,
-	retail_price,
-	department,
-	brand -- new column added in v2
-
-	{#- Unused columns:
-		- inventory_item_id
-		- distribution_center_id
-		- category
-		- sku
-		- name
-	#}
+        id AS product_id,
+        cost,
+        category,
+        name,
+        brand,
+        retail_price,
+        department,
+        sku,
+        distribution_center_id
 
 FROM source

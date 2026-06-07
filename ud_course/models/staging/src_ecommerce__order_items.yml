@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: stg_ecommerce__order_items
+    description: ""
+    columns:
+      - name: order_item_id
+        description: ""
+
+      - name: order_id
+        description: ""
+        tests:
+          - not_null
+          - relationships: 
+              to: ref('stg_ecommerce__orders')
+              field: order_id
+
+      - name: user_id
+        description: ""
+
+      - name: product_id
+        description: ""
+
+      - name: inventory_item_id
+        description: ""
+
+      - name: status
+        description: ""
+
+      - name: created_at
+        description: ""
+
+      - name: shipped_at
+        description: ""
+        tests:
+          - not_null:
+              where: "delivered_at IS NOT NULL OR status = 'Shipped'"
+
+
+      - name: delivered_at
+        description: ""
+
+      - name: returned_at
+        description: ""
+
+      - name: sale_price
+        description: ""
